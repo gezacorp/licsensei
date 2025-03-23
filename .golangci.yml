@@ -1,0 +1,52 @@
+issues:
+  exclude-dirs:
+    - samples
+    - playground
+    - cmd
+
+linters-settings:
+  gci:
+    sections:
+      - standard
+      - default
+      - prefix(github.com/gezacorp)
+  golint:
+    min-confidence: 0.9
+
+  gocyclo:
+    min-complexity: 15
+
+  revive:
+    rules:
+      - name: var-naming
+        severity: warning
+        disabled: true
+
+linters:
+  enable-all: true
+  disable:
+    - cyclop
+    - depguard
+    - exhaustive
+    - exhaustruct
+    - funlen
+    - gochecknoglobals
+    - godot
+    - godox
+    - gomoddirectives
+    - gosec
+    - inamedparam
+    - interfacebloat
+    - ireturn
+    - lll
+    - mnd
+    - nilnil
+    - stylecheck
+    - tagliatelle
+    - varnamelen
+    - wrapcheck
+    - wsl
+    - tenv
+
+    - nosprintfhostport
+  fast: false

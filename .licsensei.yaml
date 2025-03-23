@@ -1,0 +1,11 @@
+ignoreFiles:
+  - "*_gen.go"
+ignorePaths:
+  - internal/licsensei/test
+headerConfigs:
+  - copyrights:
+      - "Copyright (c) :YEAR: :AUTHOR:"
+    licenseTypes:
+      - MIT
+    authors:
+      - Geza Corp authors
